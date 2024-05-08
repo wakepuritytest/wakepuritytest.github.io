@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordered List with Checkboxes</title>
+    <script>
+        function calculateScore() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCount = 0;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    checkedCount++;
+                }
+            }
+
+            // Calculate the score as 100 minus the number of checkboxes checked
+            var score = 100 - checkedCount;
+
+            // Update the page content with the score
+            var scoreElement = document.getElementById("score");
+            scoreElement.innerHTML = "<h2>Your Score: " + score + "</h2>";
+
+            // Hide other content
+            var contentToHide = document.getElementById("contentToHide");
+            contentToHide.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="contentToHide">
+
+    REPLACE_OL
+
+    <button onclick="calculateScore()">
+        Calculate My Score
+    </button>
+
+</div>
+
+<div id="score"></div>
+
+</body>
+
+</html>

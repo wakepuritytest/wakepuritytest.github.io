@@ -1,0 +1,35 @@
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #FAEDCB;
+        color: black;
+    }
+    img {
+        filter: grayscale(30%);
+    }
+}
+
+.title_image{
+    transform: scale(50%,50%) translateY(200px);
+    text-align: center;
+}
+
+.text1{
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    font-style: italic;
+}
+
+.text2{
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-weight: bold;
+}
+
+.text3{
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordered List with Checkboxes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+  <script>
+    function calculateScore() {
+      var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      var checkedCount = 0;
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          checkedCount++;
+        }
+      }
+
+      // Calculate the score as 100 minus the number of checkboxes checked
+      var score = 100 - checkedCount;
+
+      // Update the page content with the score
+      var scoreElement = document.getElementById("score");
+      scoreElement.innerHTML = "<h2>Your Score: " + score + "</h2>";
+
+      // Hide other content
+      var contentToHide = document.getElementById("contentToHide");
+      contentToHide.style.display = "none";
+    }
+  </script>
+</head>
+
+<body>
+
+<p class = "title_image"> <img src="images/Screenshot 2024-04-04 at 2.34.22 PM.png"></p>
+<p class = "text1"> The Wake Purity Test has been adapted from the Rice Purity Test.
+  It is a voluntary opportunity for Wake Forest University students to bond and track their college experiences’ maturation.
+  The anonymous creators have attempted to represent numerous groups on campus.
+  Many of these items are intended as harmless jokes, so please do not take offense. Go Deacs, always.</P>
+
+<p class = "text2">Caution: This is not a bucket list. Completion of all items on this list will likely result in death or expulsion.</P>
+
+<p class = "text3">Click on every item you have done. MPS stands for Member of Preferred Sex.</P>
+
+
+<div id="contentToHide">
+
+  <ol>
+    <li><input type="checkbox" id="item1" name="item1"/><label for="item1"> Current wake student</label></li>
+    <li><input type="checkbox" id="item2" name="item2"/><label for="item2"> Finished freshmen year</label></li>
+    <li><input type="checkbox" id="item3" name="item3"/><label for="item3"> Finished sophomore year</label></li>
+    <li><input type="checkbox" id="item4" name="item4"/><label for="item4"> Finished junior year</label></li>
+    <li><input type="checkbox" id="item5" name="item5"/><label for="item5"> Took 17 or more credit hours in a semester</label></li>
+    <li><input type="checkbox" id="item6" name="item6"/><label for="item6"> Spent more than 6 hours in ZSR in one day</label></li>
+    <li><input type="checkbox" id="item7" name="item7"/><label for="item7"> Made the dean's list</label></li>
+    <li><input type="checkbox" id="item8" name="item8"/><label for="item8"> Joined a club on campus</label></li>
+    <li><input type="checkbox" id="item9" name="item9"/><label for="item9"> Held a leadership position for a club</label></li>
+    <li><input type="checkbox" id="item10" name="item10"/><label for="item10"> Applied or will apply to the B-school</label></li>
+    <li><input type="checkbox" id="item11" name="item11"/><label for="item11"> Seen an athlete or Mason Goodwyn on a scooter</label></li>
+    <li><input type="checkbox" id="item12" name="item12"/><label for="item12"> Were ever or are in a relationship with a Wake student</label></li>
+    <li><input type="checkbox" id="item13" name="item13"/><label for="item13"> Hiked Pilot or Stone mountain</label></li>
+    <li><input type="checkbox" id="item14" name="item14"/><label for="item14"> Flirted with your TA</label></li>
+    <li><input type="checkbox" id="item15" name="item15"/><label for="item15"> Participated in Hit the bricks</label></li>
+    <li><input type="checkbox" id="item16" name="item16"/><label for="item16"> Participated in Wake N' Shake</label></li>
+    <li><input type="checkbox" id="item17" name="item17"/><label for="item17"> Participated in Lovefeast</label></li>
+    <li><input type="checkbox" id="item18" name="item18"/><label for="item18"> Participated in Project Pumpkin</label></li>
+    <li><input type="checkbox" id="item19" name="item19"/><label for="item19"> Participated in Lighting of the Quad</label></li>
+    <li><input type="checkbox" id="item20" name="item20"/><label for="item20"> Drank an Arnold Palmer on Arnold Palmer day</label></li>
+    <li><input type="checkbox" id="item21" name="item21"/><label for="item21"> Attended a Wake football game</label></li>
+    <li><input type="checkbox" id="item22" name="item22"/><label for="item22"> Attended a Wake W/M's basketball game</label></li>
+    <li><input type="checkbox" id="item23" name="item23"/><label for="item23"> Attended a Wake baseball game</label></li>
+    <li><input type="checkbox" id="item24" name="item24"/><label for="item24"> Attended a Wake W/M's soccer game</label></li>
+    <li><input type="checkbox" id="item25" name="item25"/><label for="item25"> Redeemed a prize in Screamin Demon Rewards</label></li>
+    <li><input type="checkbox" id="item26" name="item26"/><label for="item26"> Spent all old golds before pit swipes</label></li>
+    <li><input type="checkbox" id="item27" name="item27"/><label for="item27"> Completed a pit-sit for the pitsgiving group</label></li>
+    <li><input type="checkbox" id="item28" name="item28"/><label for="item28"> Dated another Wake student</label></li>
+    <li><input type="checkbox" id="item29" name="item29"/><label for="item29"> Hooked up with another Wake student</label></li>
+    <li><input type="checkbox" id="item30" name="item30"/><label for="item30"> Married/Engaged to another Wake student </label></li>
+    <li><input type="checkbox" id="item31" name="item31"/><label for="item31"> Been to LR</label></li>
+    <li><input type="checkbox" id="item32" name="item32"/><label for="item32"> Been to LR more than 5 times in one semester</label></li>
+    <li><input type="checkbox" id="item33" name="item33"/><label for="item33"> Been to Earls</label></li>
+    <li><input type="checkbox" id="item34" name="item34"/><label for="item34"> Been to Earls more than 5 times in one semester</label></li>
+    <li><input type="checkbox" id="item35" name="item35"/><label for="item35"> Been to a Banshees show</label></li>
+    <li><input type="checkbox" id="item36" name="item36"/><label for="item36"> Laughed at a Banshees show</label></li>
+    <li><input type="checkbox" id="item37" name="item37"/><label for="item37"> Rolled the quad</label></li>
+    <li><input type="checkbox" id="item38" name="item38"/><label for="item38"> Taken a picture with Wente</label></li>
+    <li><input type="checkbox" id="item39" name="item39"/><label for="item39"> Taken a picture with the Deacon</label></li>
+    <li><input type="checkbox" id="item40" name="item40"/><label for="item40"> Follow Sam Hartman on Instagram, Twitter, or Hudl</label></li>
+    <li><input type="checkbox" id="item41" name="item41"/><label for="item41"> Been to Islander</label></li>
+    <li><input type="checkbox" id="item42" name="item42"/><label for="item42"> Been to DKE Heat</label></li>
+    <li><input type="checkbox" id="item43" name="item43"/><label for="item43"> Attended Pike-toberfest</label></li>
+    <li><input type="checkbox" id="item44" name="item44"/><label for="item44"> Been to the compound</label></li>
+    <li><input type="checkbox" id="item45" name="item45"/><label for="item45"> Been to every house in the compound</label></li>
+    <li><input type="checkbox" id="item46" name="item46"/><label for="item46"> Attended a sorority date function</label></li>
+    <li><input type="checkbox" id="item47" name="item47"/><label for="item47"> Attended 3 or more sorority date functions</label></li>
+    <li><input type="checkbox" id="item48" name="item48"/><label for="item48"> Participated in rush</label></li>
+    <li><input type="checkbox" id="item49" name="item49"/><label for="item49"> Got dropped by a fraternity/sorority</label></li>
+    <li><input type="checkbox" id="item50" name="item50"/><label for="item50"> Got a bid from a fraternity/sorority</label></li>
+    <li><input type="checkbox" id="item51" name="item51"/><label for="item51"> Active in a fraternity/sorority</label></li>
+    <li><input type="checkbox" id="item52" name="item52"/><label for="item52"> Disaffiliated from a fraternity/sorority</label></li>
+    <li><input type="checkbox" id="item53" name="item53"/><label for="item53"> Paid greek life dues late</label></li>
+    <li><input type="checkbox" id="item54" name="item54"/><label for="item54"> Witnessed the ASig pledge haircuts</label></li>
+    <li><input type="checkbox" id="item55" name="item55"/><label for="item55"> Drove or ridden in a pledge car</label></li>
+    <li><input type="checkbox" id="item56" name="item56"/><label for="item56"> Attended mountain week</label></li>
+    <li><input type="checkbox" id="item57" name="item57"/><label for="item57"> Attended beach week</label></li>
+    <li><input type="checkbox" id="item58" name="item58"/><label for="item58"> Stolen alcohol from a fraternity</label></li>
+    <li><input type="checkbox" id="item59" name="item59"/><label for="item59"> Stolen something other than alcohol from a fraternity</label></li>
+    <li><input type="checkbox" id="item60" name="item60"/><label for="item60"> Smoked a drunk cig on the balcony of a quad dorm</label></li>
+    <li><input type="checkbox" id="item61" name="item61"/><label for="item61"> Blacked out at a fraternity</label></li>
+    <li><input type="checkbox" id="item62" name="item62"/><label for="item62"> Fell on the way back from fraternity</label></li>
+    <li><input type="checkbox" id="item63" name="item63"/><label for="item63"> Participated in Wake Wednesday</label></li>
+    <li><input type="checkbox" id="item64" name="item64"/><label for="item64"> Rallied from a darty to a party</label></li>
+    <li><input type="checkbox" id="item65" name="item65"/><label for="item65"> Drank more than 5 times in an academic week</label></li>
+    <li><input type="checkbox" id="item66" name="item66"/><label for="item66"> Studied abroad</label></li>
+    <li><input type="checkbox" id="item67" name="item67"/><label for="item67"> Spent the semester after studying abroad telling everybody about your abroad time</label></li>
+    <li><input type="checkbox" id="item68" name="item68"/><label for="item68"> Posted on Fizz</label></li>
+    <li><input type="checkbox" id="item69" name="item69"/><label for="item69"> Posted on Fizz more than 5 times in one day</label></li>
+    <li><input type="checkbox" id="item70" name="item70"/><label for="item70"> Posted a Fizz that got more than 1k upvotes</label></li>
+    <li><input type="checkbox" id="item71" name="item71"/><label for="item71"> Posted about your fraternity/sorority on Fizz</label></li>
+    <li><input type="checkbox" id="item72" name="item72"/><label for="item72"> Top 1000 fizzer at Wake</label></li>
+    <li><input type="checkbox" id="item73" name="item73"/><label for="item73"> More than 15k Fizz karama</label></li>
+    <li><input type="checkbox" id="item74" name="item74"/><label for="item74"> Kissed someone not in your year</label></li>
+    <li><input type="checkbox" id="item75" name="item75"/><label for="item75"> Kissed in a fraternity house</label></li>
+    <li><input type="checkbox" id="item76" name="item76"/><label for="item76"> Kissed more than 5 people in the same fraternity/sorority</label></li>
+    <li><input type="checkbox" id="item77" name="item77"/><label for="item77"> Hooked up on south campus</label></li>
+    <li><input type="checkbox" id="item78" name="item78"/><label for="item78"> Hooked up in more than 3 buildings on South Campus</label></li>
+    <li><input type="checkbox" id="item79" name="item79"/><label for="item79"> Hooked up in a quad dorm </label></li>
+    <li><input type="checkbox" id="item80" name="item80"/><label for="item80"> Hooked up in more than one quad dorm</label></li>
+    <li><input type="checkbox" id="item81" name="item81"/><label for="item81"> Hooked up with a Wake student you met on a dating app (Tinder, Bumble, etc.)</label></li>
+    <li><input type="checkbox" id="item82" name="item82"/><label for="item82"> Stolen a brick from campus</label></li>
+    <li><input type="checkbox" id="item83" name="item83"/><label for="item83"> Stolen more than 3 bricks from campus</label></li>
+    <li><input type="checkbox" id="item84" name="item84"/><label for="item84"> Been to president's ball</label></li>
+    <li><input type="checkbox" id="item85" name="item85"/><label for="item85"> Made fun of coms majors</label></li>
+    <li><input type="checkbox" id="item86" name="item86"/><label for="item86"> Participated in senior 5th</label></li>
+    <li><input type="checkbox" id="item87" name="item87"/><label for="item87"> Ordered from Safe Sex Express</label></li>
+    <li><input type="checkbox" id="item88" name="item88"/><label for="item88"> Unintentionally set off fire alarm in your dorm</label></li>
+    <li><input type="checkbox" id="item89" name="item89"/><label for="item89"> Received parking ticket</label></li>
+    <li><input type="checkbox" id="item90" name="item90"/><label for="item90"> Received more than 5 parking tickets</label></li>
+    <li><input type="checkbox" id="item91" name="item91"/><label for="item91"> Seen a professor while working out in the gym</label></li>
+    <li><input type="checkbox" id="item92" name="item92"/><label for="item92"> Saw Professor Omaar Hena's explicit photos</label></li>
+    <li><input type="checkbox" id="item93" name="item93"/><label for="item93"> Ubered from one point of campus to another</label></li>
+    <li><input type="checkbox" id="item94" name="item94"/><label for="item94"> Hooked up in a study carrels in ZSR</label></li>
+    <li><input type="checkbox" id="item95" name="item95"/><label for="item95"> Hooked up in Carswell</label></li>
+    <li><input type="checkbox" id="item96" name="item96"/><label for="item96"> Hooked up in campus kitchen</label></li>
+    <li><input type="checkbox" id="item97" name="item97"/><label for="item97"> Hooked up with your TA</label></li>
+    <li><input type="checkbox" id="item98" name="item98"/><label for="item98"> Hooked up with a parent during parents weekend</label></li>
+    <li><input type="checkbox" id="item99" name="item99"/><label for="item99"> Hooked up with an entire sorority/fraternity lineage </label></li>
+    <li><input type="checkbox" id="item100" name="item100"/><label for="item100"> Hooked up with a Pit Worker</label></li>
+  </ol>
+
+
+  <button onclick="calculateScore()">
+    Calculate My Score
+  </button>
+
+</div>
+
+<div id="score"></div>
+
+</body>
+
+</html>
