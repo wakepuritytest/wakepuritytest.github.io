@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ordered List with Checkboxes</title>
-  <link rel="stylesheet" href="src/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT1C3K9K50"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FT1C3K9K50');
+
     function calculateScore() {
       var checkboxes = document.querySelectorAll('input[type="checkbox"]');
       var checkedCount = 0;
@@ -29,6 +32,13 @@
       contentToHide.style.display = "none";
     }
   </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wake Purity Test</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+
 </head>
 
 <body>
